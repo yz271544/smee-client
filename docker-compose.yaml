@@ -1,0 +1,6 @@
+version: '3.0'
+services:
+  smee-client:
+    image: registry.cn-sh-01.sensecore.cn/tsm_2024052501/smee-client:v2.0.2-4-g3a7cce7
+    command: ["-u", "http://45.77.36.225:33000/sensetimelm", "-t", "http://10.4.156.14:58989/github-webhook/"]
+    restart: always
